@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Renault Uberlândia | Consultor de Vendas 0KM</title>
+<meta name="description" content="Renault 0km em Uberlândia. Kwid, Kardian, Duster, Oroch, Boreal, Koleos, Megane E-Tech e linha Master. Atendimento direto no WhatsApp, condições especiais, test-drive e avaliação do seu usado.">
+<meta name="theme-color" content="#0A0C10">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Renault Uberlândia | Consultor de Vendas 0KM">
+<meta property="og:description" content="Toda a linha Renault 0km com atendimento direto no WhatsApp.">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- ====== META PIXEL (troque SEU_PIXEL_ID) ====== -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','SEU_PIXEL_ID');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+
+<style>
+/* =========================================================
+   TOKENS
+   ========================================================= */
+:root{
+  --bg:#0A0C10;
+  --bg-2:#0F131A;
+  --surface:#141922;
+  --surface-2:#1A212C;
+  --line:rgba(255,255,255,.08);
+  --line-strong:rgba(255,255,255,.16);
+  --text:#EDF1F7;
+  --muted:#9AA5B5;
+  --accent:#3D7BFF;
+  --accent-2:#00E0C6;
+  --accent-soft:rgba(61,123,255,.14);
+  --wa:#25D366;
+  --radius:20px;
+  --radius-sm:12px;
+  --shadow:0 24px 60px -20px rgba(0,0,0,.75);
+  --max:1240px;
+  --header-h:76px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Outfit',system-ui,-apple-system,'Segoe UI',sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.6;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font-family:inherit;font-size:inherit}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent-2);margin-bottom:14px;
+}
+.eyebrow::before{content:'';width:26px;height:1px;background:var(--accent-2);opacity:.7}
+h1,h2,h3{line-height:1.12;letter-spacing:-.02em;font-weight:700}
+.sec-title{font-size:clamp(1.9rem,4.6vw,3rem);font-weight:700}
+.sec-sub{color:var(--muted);max-width:620px;margin-top:14px;font-size:1.02rem}
+section{padding:clamp(64px,9vw,110px) 0;position:relative}
+
+/* =========================================================
+   BOTÕES
+   ========================================================= */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:15px 28px;border-radius:100px;border:1px solid transparent;
+  font-weight:600;font-size:.97rem;cursor:pointer;
+  transition:transform .25s cubic-bezier(.2,.8,.3,1),box-shadow .25s,background .25s,border-color .25s;
+  white-space:nowrap;
+}
+.btn:active{transform:scale(.97)}
+.btn-primary{
+  background:linear-gradient(135deg,var(--accent) 0%,#6B5BFF 100%);
+  color:#fff;box-shadow:0 12px 30px -10px rgba(61,123,255,.75);
+}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 40px -12px rgba(61,123,255,.85)}
+.btn-wa{background:var(--wa);color:#04220F;box-shadow:0 12px 30px -10px rgba(37,211,102,.6)}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 20px 40px -12px rgba(37,211,102,.7)}
+.btn-ghost{background:rgba(255,255,255,.04);border-color:var(--line-strong);color:var(--text)}
+.btn-ghost:hover{background:rgba(255,255,255,.09);border-color:var(--accent);transform:translateY(-3px)}
+.btn-block{width:100%}
+.btn svg{width:19px;height:19px;flex-shrink:0}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+.topbar{
+  background:linear-gradient(90deg,#111722,#0C1017);
+  border-bottom:1px solid var(--line);font-size:.82rem;color:var(--muted);
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:40px}
+.topbar-left{display:flex;align-items:center;gap:8px}
+.topbar-left b{color:var(--text);font-weight:500}
+.topbar-right{display:flex;align-items:center;gap:22px}
+.topbar a{display:inline-flex;align-items:center;gap:7px;transition:color .2s}
+.topbar a:hover{color:var(--accent-2)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent-2);box-shadow:0 0 10px var(--accent-2);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+header.main{
+  position:sticky;top:0;z-index:900;
+  background:rgba(10,12,16,.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line);transition:background .3s,box-shadow .3s;
+}
+header.main.scrolled{background:rgba(10,12,16,.94);box-shadow:0 10px 34px -18px #000}
+header.main .wrap{display:flex;align-items:center;justify-content:space-between;height:var(--header-h);gap:20px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{
+  width:42px;height:42px;border-radius:12px;flex-shrink:0;
+  background:linear-gradient(140deg,var(--accent),var(--accent-2));
+  display:grid;place-items:center;box-shadow:0 8px 24px -10px rgba(61,123,255,.9);
+}
+.brand-mark svg{width:24px;height:24px}
+.brand-txt strong{display:block;font-size:1.02rem;font-weight:700;letter-spacing:.02em;line-height:1.15}
+.brand-txt span{display:block;font-size:.66rem;color:var(--muted);letter-spacing:.24em;text-transform:uppercase}
+
+nav.desktop{display:none;align-items:center;gap:6px}
+nav.desktop a{
+  padding:9px 15px;border-radius:100px;font-size:.9rem;font-weight:500;color:var(--muted);
+  transition:color .2s,background .2s;
+}
+nav.desktop a:hover{color:var(--text);background:rgba(255,255,255,.06)}
+.header-cta{display:none}
+
+.burger{
+  width:44px;height:44px;border-radius:12px;border:1px solid var(--line-strong);
+  background:rgba(255,255,255,.04);display:grid;place-items:center;cursor:pointer;gap:5px;
+}
+.burger span{display:block;width:18px;height:2px;background:var(--text);border-radius:2px;transition:.3s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.drawer{
+  position:fixed;inset:var(--header-h) 0 0 0;z-index:880;
+  background:rgba(10,12,16,.98);backdrop-filter:blur(20px);
+  padding:26px 20px 40px;overflow-y:auto;
+  transform:translateX(100%);transition:transform .38s cubic-bezier(.4,0,.2,1);
+}
+.drawer.open{transform:translateX(0)}
+.drawer a.dl{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:17px 4px;border-bottom:1px solid var(--line);font-size:1.06rem;font-weight:500;
+}
+.drawer a.dl svg{width:17px;height:17px;color:var(--muted)}
+.drawer .btn{margin-top:26px}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero{
+  position:relative;padding:clamp(56px,9vw,104px) 0 clamp(60px,8vw,96px);
+  overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;top:-30%;right:-20%;width:80vw;height:80vw;max-width:900px;max-height:900px;
+  background:radial-gradient(circle,rgba(61,123,255,.22) 0%,transparent 62%);pointer-events:none;
+}
+.hero::after{
+  content:'';position:absolute;bottom:-40%;left:-25%;width:70vw;height:70vw;max-width:800px;max-height:800px;
+  background:radial-gradient(circle,rgba(0,224,198,.13) 0%,transparent 62%);pointer-events:none;
+}
+.hero .wrap{position:relative;z-index:2}
+.hero-grid{display:grid;gap:44px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,7.2vw,4.3rem);font-weight:800;letter-spacing:-.035em}
+.hero h1 em{
+  font-style:normal;
+  background:linear-gradient(120deg,var(--accent) 10%,var(--accent-2) 90%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p.lead{color:var(--muted);font-size:clamp(1rem,2.4vw,1.16rem);margin-top:20px;max-width:560px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero-stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:44px;
+  padding-top:30px;border-top:1px solid var(--line);
+}
+.hero-stats div strong{display:block;font-size:clamp(1.4rem,4.4vw,2rem);font-weight:700;color:var(--accent-2)}
+.hero-stats div span{font-size:.76rem;color:var(--muted);letter-spacing:.05em}
+
+.hero-card{
+  position:relative;border-radius:26px;padding:26px;
+  background:linear-gradient(160deg,var(--surface) 0%,var(--bg-2) 100%);
+  border:1px solid var(--line);box-shadow:var(--shadow);
+}
+.hero-card .hc-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.hero-card .badge{
+  font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;
+  color:var(--accent-2);background:rgba(0,224,198,.1);border:1px solid rgba(0,224,198,.28);
+  padding:6px 12px;border-radius:100px;
+}
+.hero-car{
+  aspect-ratio:16/10;border-radius:16px;overflow:hidden;
+  background:radial-gradient(ellipse at 50% 85%,rgba(61,123,255,.2),transparent 65%),var(--surface-2);
+  display:grid;place-items:center;
+}
+.hero-car img{width:100%;height:100%;object-fit:cover}
+.hc-list{display:grid;gap:11px;margin-top:20px}
+.hc-list li{display:flex;align-items:center;gap:11px;font-size:.93rem;color:var(--muted);list-style:none}
+.hc-list li svg{width:19px;height:19px;color:var(--accent-2);flex-shrink:0}
+
+/* =========================================================
+   TRUST STRIP
+   ========================================================= */
+.trust{border-block:1px solid var(--line);background:var(--bg-2);padding:26px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.trust-item{display:flex;align-items:center;gap:13px}
+.trust-item svg{width:26px;height:26px;color:var(--accent);flex-shrink:0}
+.trust-item b{display:block;font-size:.92rem;font-weight:600}
+.trust-item span{font-size:.78rem;color:var(--muted)}
+
+/* =========================================================
+   MODELOS
+   ========================================================= */
+.sec-head{display:flex;flex-direction:column;gap:24px;margin-bottom:38px}
+.filters{display:flex;gap:9px;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.chip{
+  padding:11px 20px;border-radius:100px;border:1px solid var(--line-strong);
+  background:rgba(255,255,255,.03);color:var(--muted);font-size:.87rem;font-weight:500;
+  cursor:pointer;white-space:nowrap;transition:.25s;
+}
+.chip:hover{color:var(--text);border-color:var(--accent)}
+.chip.active{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 10px 26px -12px rgba(61,123,255,.9)}
+
+.cars{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.car{
+  background:linear-gradient(165deg,var(--surface) 0%,var(--bg-2) 100%);
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  display:flex;flex-direction:column;position:relative;
+  transition:transform .3s cubic-bezier(.2,.8,.3,1),border-color .3s,box-shadow .3s;
+  animation:fadeUp .5s both;
+}
+.car:hover{transform:translateY(-7px);border-color:rgba(61,123,255,.55);box-shadow:0 26px 56px -24px rgba(0,0,0,.9)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.car-img{
+  aspect-ratio:16/10;position:relative;overflow:hidden;
+  background:radial-gradient(ellipse at 50% 88%,rgba(61,123,255,.18),transparent 62%),var(--surface-2);
+  display:grid;place-items:center;
+}
+.car-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.car:hover .car-img img{transform:scale(1.06)}
+.tag{
+  position:absolute;top:12px;left:12px;z-index:2;
+  font-size:.66rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  padding:6px 11px;border-radius:100px;backdrop-filter:blur(8px);
+  background:rgba(10,12,16,.7);border:1px solid var(--line-strong);color:var(--muted);
+}
+.tag.eletrico{color:var(--accent-2);border-color:rgba(0,224,198,.4);background:rgba(0,224,198,.12)}
+.tag.hibrido{color:#8FB4FF;border-color:rgba(143,180,255,.4);background:rgba(143,180,255,.12)}
+.tag.diesel{color:#FFC46B;border-color:rgba(255,196,107,.35);background:rgba(255,196,107,.1)}
+.car-body{padding:20px;display:flex;flex-direction:column;flex:1;gap:12px}
+.car-body h3{font-size:1.24rem;font-weight:700}
+.car-body p{font-size:.87rem;color:var(--muted);flex:1}
+.car-specs{display:flex;flex-wrap:wrap;gap:7px}
+.spec{
+  font-size:.72rem;color:var(--muted);padding:5px 10px;border-radius:8px;
+  background:rgba(255,255,255,.04);border:1px solid var(--line);
+}
+.car-foot{display:flex;flex-direction:column;gap:9px;margin-top:4px}
+.price-line{font-size:.78rem;color:var(--muted)}
+.price-line b{display:block;font-size:1.05rem;color:var(--text);font-weight:600}
+.car .btn{padding:13px 20px;font-size:.9rem}
+
+/* =========================================================
+   E-TECH
+   ========================================================= */
+.etech{
+  border-radius:26px;padding:clamp(30px,5vw,56px);position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#0E1A2B 0%,#0A1F22 100%);
+  border:1px solid rgba(0,224,198,.22);
+}
+.etech::before{
+  content:'';position:absolute;top:-50%;right:-15%;width:60%;height:200%;
+  background:radial-gradient(circle,rgba(0,224,198,.2),transparent 60%);
+}
+.etech-in{position:relative;z-index:2;max-width:640px}
+.etech h2{font-size:clamp(1.6rem,4.4vw,2.5rem)}
+.etech p{color:var(--muted);margin:14px 0 26px}
+
+/* =========================================================
+   SERVIÇOS
+   ========================================================= */
+.svcs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.svc{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px;transition:.3s;
+}
+.svc:hover{transform:translateY(-6px);border-color:rgba(61,123,255,.5);background:var(--surface-2)}
+.svc-ic{
+  width:52px;height:52px;border-radius:15px;display:grid;place-items:center;margin-bottom:18px;
+  background:var(--accent-soft);border:1px solid rgba(61,123,255,.3);
+}
+.svc-ic svg{width:25px;height:25px;color:var(--accent)}
+.svc h3{font-size:1.15rem;margin-bottom:9px}
+.svc p{font-size:.9rem;color:var(--muted);margin-bottom:16px}
+.svc a{font-size:.87rem;font-weight:600;color:var(--accent-2);display:inline-flex;align-items:center;gap:6px}
+.svc a svg{width:15px;height:15px;transition:transform .25s}
+.svc a:hover svg{transform:translateX(4px)}
+
+/* =========================================================
+   SIMULADOR
+   ========================================================= */
+.sim{
+  display:grid;gap:26px;background:linear-gradient(160deg,var(--surface),var(--bg-2));
+  border:1px solid var(--line);border-radius:26px;padding:clamp(24px,4vw,44px);box-shadow:var(--shadow);
+}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:.8rem;color:var(--muted);margin-bottom:7px;font-weight:500}
+.field input,.field select,.field textarea{
+  width:100%;padding:14px 16px;border-radius:var(--radius-sm);
+  background:rgba(255,255,255,.04);border:1px solid var(--line-strong);color:var(--text);
+  transition:border-color .2s,background .2s;
+}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none;border-color:var(--accent);background:rgba(61,123,255,.07);
+}
+.field select option{background:var(--surface);color:var(--text)}
+.field textarea{resize:vertical;min-height:96px}
+.row-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sim-out{
+  background:rgba(61,123,255,.08);border:1px solid rgba(61,123,255,.28);
+  border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;justify-content:center;gap:8px;
+}
+.sim-out small{font-size:.76rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.sim-out .val{font-size:clamp(1.9rem,6vw,2.7rem);font-weight:800;letter-spacing:-.03em;color:var(--accent-2)}
+.sim-out .sub{font-size:.84rem;color:var(--muted)}
+.sim-out hr{border:none;border-top:1px solid var(--line);margin:14px 0}
+.sim-note{font-size:.72rem;color:var(--muted);opacity:.8;line-height:1.5}
+
+/* =========================================================
+   CONTATO
+   ========================================================= */
+.contact-grid{display:grid;gap:30px}
+.info-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px;display:flex;gap:15px;align-items:flex-start;margin-bottom:14px;
+}
+.info-card svg{width:22px;height:22px;color:var(--accent-2);flex-shrink:0;margin-top:3px}
+.info-card b{display:block;margin-bottom:5px;font-size:.95rem}
+.info-card p,.info-card a{font-size:.88rem;color:var(--muted);line-height:1.65}
+.info-card a:hover{color:var(--accent-2)}
+.form-box{
+  background:linear-gradient(160deg,var(--surface),var(--bg-2));
+  border:1px solid var(--line);border-radius:26px;padding:clamp(24px,4vw,38px);box-shadow:var(--shadow);
+}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.8rem;color:var(--muted);margin:6px 0 18px}
+.check input{width:17px;height:17px;margin-top:2px;accent-color:var(--accent);flex-shrink:0}
+
+/* =========================================================
+   FOOTER + FAB
+   ========================================================= */
+footer{background:var(--bg-2);border-top:1px solid var(--line);padding:56px 0 30px}
+.foot-grid{display:grid;gap:34px;margin-bottom:38px}
+.foot-col h4{font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-2);margin-bottom:16px}
+.foot-col ul{list-style:none;display:grid;gap:10px}
+.foot-col a{font-size:.88rem;color:var(--muted);transition:color .2s}
+.foot-col a:hover{color:var(--text)}
+.foot-bottom{
+  border-top:1px solid var(--line);padding-top:24px;
+  display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center;
+  font-size:.78rem;color:var(--muted);
+}
+.socials{display:flex;gap:12px}
+.socials a{
+  width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
+  border:1px solid var(--line-strong);background:rgba(255,255,255,.03);transition:.25s;
+}
+.socials a:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px)}
+.socials svg{width:17px;height:17px}
+
+.fab{
+  position:fixed;right:16px;bottom:16px;z-index:950;
+  display:flex;align-items:center;gap:10px;padding:14px 20px;border-radius:100px;
+  background:var(--wa);color:#04220F;font-weight:600;font-size:.92rem;
+  box-shadow:0 16px 40px -12px rgba(37,211,102,.75);
+  transition:transform .25s;
+}
+.fab:hover{transform:scale(1.05)}
+.fab svg{width:24px;height:24px}
+.fab span{display:none}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+@media (min-width:600px){
+  .trust-grid{grid-template-columns:repeat(4,1fr)}
+  .fab span{display:inline}
+  .foot-bottom{flex-direction:row;justify-content:space-between;text-align:left}
+}
+@media (min-width:768px){
+  .sec-head{flex-direction:row;align-items:flex-end;justify-content:space-between}
+  .filters{padding-bottom:0}
+  .sim{grid-template-columns:1.15fr .85fr;align-items:start}
+  .contact-grid{grid-template-columns:.9fr 1.1fr}
+  .foot-grid{grid-template-columns:1.4fr 1fr 1fr 1fr}
+}
+@media (min-width:1024px){
+  .burger{display:none}
+  nav.desktop{display:flex}
+  .header-cta{display:inline-flex}
+  .drawer{display:none}
+  .hero-grid{grid-template-columns:1.05fr .95fr;gap:60px}
+  .hero-stats{max-width:520px}
+}
+@media (max-width:420px){
+  .row-2{grid-template-columns:1fr}
+  .hero-stats{gap:8px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= TOPBAR ================= -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-left"><span class="dot"></span><b>Atendimento online agora</b></div>
+    <div class="topbar-right">
+      <a href="https://maps.google.com/?q=Av.+João+Naves+de+Ávila,+3330+-+Saraiva,+Uberlândia+-+MG" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Uberlândia · MG
+      </a>
+      <a class="wa-link" href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.2.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+        (34) 99698-2471
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header class="main" id="header">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 12l8 10 8-10z"/></svg>
+      </div>
+      <div class="brand-txt"><strong>RENAULT</strong><span>Uberlândia</span></div>
+    </a>
+
+    <nav class="desktop">
+      <a href="#modelos">Modelos</a>
+      <a href="#etech">E-Tech</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#simulador">Simulador</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="btn btn-wa header-cta wa-link" href="#">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.2.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+      Falar no WhatsApp
+    </a>
+
+    <button class="burger" id="burger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <a class="dl" href="#modelos">Modelos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+  <a class="dl" href="#etech">E-Tech Elétricos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+  <a class="dl" href="#servicos">Serviços <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+  <a class="dl" href="#simulador">Simulador <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+  <a class="dl" href="#contato">Contato <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+  <a class="btn btn-wa btn-block wa-link" href="#">Falar com o consultor</a>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Consultor Renault · Uberlândia MG</span>
+        <h1>Seu próximo Renault <em>0km</em> começa por uma conversa.</h1>
+        <p class="lead">Toda a linha Renault com atendimento pessoal, condições reais de financiamento, avaliação do seu usado e test-drive agendado no seu horário. Sem robô, sem enrolação.</p>
+        <div class="hero-actions">
+          <a class="btn btn-wa wa-link" href="#">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.2.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+            Pedir proposta agora
+          </a>
+          <a class="btn btn-ghost" href="#modelos">Ver todos os modelos</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>14</strong><span>modelos 0km</span></div>
+          <div><strong>100%</strong><span>atendimento direto</span></div>
+          <div><strong>24h</strong><span>retorno garantido</span></div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hc-top">
+          <span class="badge">Destaque da semana</span>
+          <span style="font-size:.78rem;color:var(--muted)">0km · 2026</span>
+        </div>
+        <div class="hero-car"><img data-model="Kardian" alt="Renault Kardian"></div>
+        <h3 style="margin-top:18px;font-size:1.4rem">Renault Kardian</h3>
+        <p style="color:var(--muted);font-size:.9rem;margin-top:6px">SUV compacto turbo, câmbio EDC de dupla embreagem e central multimídia com Google integrado.</p>
+        <ul class="hc-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Entrada facilitada e parcelas negociadas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Aceito seu usado como parte do pagamento</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Test-drive agendado sem compromisso</li>
+        </ul>
+        <a class="btn btn-primary btn-block wa-link" data-msg="Olá! Vi o site e quero uma proposta do Renault Kardian 0km." href="#" style="margin-top:20px">Quero uma proposta</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST ================= -->
+<div class="trust">
+  <div class="wrap trust-grid">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 3 6v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V6z"/></svg>
+      <div><b>Concessionária oficial</b><span>Garantia de fábrica Renault</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      <div><b>Financiamento em minutos</b><span>Análise de crédito na hora</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+      <div><b>Avaliação do usado</b><span>Melhor valor de troca</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <div><b>Test-drive no seu horário</b><span>Agendamento pelo WhatsApp</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= MODELOS ================= -->
+<section id="modelos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">Linha 0km</span>
+        <h2 class="sec-title">Nossos modelos</h2>
+        <p class="sec-sub">Do urbano ao utilitário pesado — escolha o modelo e receba uma proposta personalizada em minutos.</p>
+      </div>
+    </div>
+
+    <div class="filters reveal">
+      <button class="chip active" data-filter="all">Todos os veículos</button>
+      <button class="chip" data-filter="passeio">Veículos de passeio</button>
+      <button class="chip" data-filter="eletricos">Veículos elétricos</button>
+      <button class="chip" data-filter="utilitarios">Veículos utilitários</button>
+    </div>
+
+    <div class="cars" id="carGrid"></div>
+  </div>
+</section>
+
+<!-- ================= E-TECH ================= -->
+<section id="etech" style="padding-top:0">
+  <div class="wrap">
+    <div class="etech reveal">
+      <div class="etech-in">
+        <span class="eyebrow">Tecnologia E-Tech</span>
+        <h2>100% elétrico, 100% Renault.</h2>
+        <p>Pioneira em mobilidade elétrica na Europa, a Renault traz para Uberlândia o Megane E-Tech e o Kangoo E-Tech: autonomia real para o dia a dia, recarga rápida e custo por quilômetro muito abaixo do combustível.</p>
+        <div class="hero-actions" style="margin-top:0">
+          <a class="btn btn-primary wa-link" data-msg="Olá! Quero saber mais sobre os Renault elétricos E-Tech." href="#">Falar sobre elétricos</a>
+          <a class="btn btn-ghost" href="#modelos" data-jump="eletricos">Ver modelos E-Tech</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVIÇOS ================= -->
+<section id="servicos" style="background:var(--bg-2);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">Soluções</span>
+        <h2 class="sec-title">Tudo que você precisa, aqui</h2>
+        <p class="sec-sub">Condições especiais para diferentes perfis de compra e serviços que continuam depois da entrega das chaves.</p>
+      </div>
+    </div>
+
+    <div class="svcs">
+      <div class="svc reveal">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/></svg></div>
+        <h3>Vendas diretas</h3>
+        <p>PCD, taxista e motorista de app, produtor rural, CNPJ, governo e linha Master. Isenções e descontos de fábrica com toda a documentação conduzida por mim.</p>
+        <a class="wa-link" data-msg="Olá! Quero saber sobre vendas diretas (PCD / taxi / rural / CNPJ)." href="#">Verificar se me enquadro <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+      </div>
+
+      <div class="svc reveal">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a4 4 0 0 1 5 5l-9 9-5 1 1-5z"/></svg></div>
+        <h3>Revisão e pós-venda</h3>
+        <p>Oficina certificada, peças genuínas e mão de obra treinada pela Renault. Sua garantia preservada e revisões com preço fechado.</p>
+        <a class="wa-link" data-msg="Olá! Quero agendar uma revisão Renault." href="#">Agendar revisão <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+      </div>
+
+      <div class="svc reveal">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="13" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+        <h3>Avalie seu usado</h3>
+        <p>Avaliação justa e rápida do seu veículo atual como entrada no 0km. Você sai com o carro novo sem precisar vender por fora.</p>
+        <a class="wa-link" data-msg="Olá! Quero avaliar meu carro usado como entrada em um 0km." href="#">Avaliar meu carro <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+      </div>
+
+      <div class="svc reveal">
+        <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Test-drive</h3>
+        <p>Escolha o modelo, o dia e o horário. O carro fica reservado para você experimentar com calma, sem pressão de compra.</p>
+        <a class="wa-link" data-msg="Olá! Quero agendar um test-drive." href="#">Agendar test-drive <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SIMULADOR ================= -->
+<section id="simulador">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">Financiamento</span>
+        <h2 class="sec-title">Simule sua parcela</h2>
+        <p class="sec-sub">Faça uma estimativa em segundos e me envie o resultado pelo WhatsApp para eu buscar a melhor taxa real com os bancos parceiros.</p>
+      </div>
+    </div>
+
+    <div class="sim reveal">
+      <div>
+        <div class="field">
+          <label for="simModelo">Modelo de interesse</label>
+          <select id="simModelo"></select>
+        </div>
+        <div class="field">
+          <label for="simValor">Valor do veículo (R$)</label>
+          <input type="number" id="simValor" value="90000" min="10000" step="1000" inputmode="numeric">
+        </div>
+        <div class="row-2">
+          <div class="field">
+            <label for="simEntrada">Entrada (R$)</label>
+            <input type="number" id="simEntrada" value="27000" min="0" step="1000" inputmode="numeric">
+          </div>
+          <div class="field">
+            <label for="simPrazo">Prazo</label>
+            <select id="simPrazo">
+              <option value="24">24 meses</option>
+              <option value="36">36 meses</option>
+              <option value="48" selected>48 meses</option>
+              <option value="60">60 meses</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="simTaxa">Taxa estimada (% ao mês)</label>
+          <input type="number" id="simTaxa" value="1.49" step="0.01" min="0.1" inputmode="decimal">
+        </div>
+      </div>
+
+      <div class="sim-out">
+        <small>Parcela estimada</small>
+        <div class="val" id="outParcela">R$ 0</div>
+        <div class="sub" id="outResumo">—</div>
+        <hr>
+        <a class="btn btn-wa btn-block" id="simWa" href="#">Enviar simulação no WhatsApp</a>
+        <p class="sim-note">Simulação com cálculo Price, apenas para referência. Não considera IOF, tarifas, seguros ou registro de contrato. Valores, taxas e aprovação sujeitos à análise de crédito e às condições vigentes do banco.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section id="contato" style="background:var(--bg-2);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">Fale comigo</span>
+        <h2 class="sec-title">Vamos conversar</h2>
+        <p class="sec-sub">Preencha os campos e sua mensagem já abre pronta no meu WhatsApp — ou me chame direto, do jeito que preferir.</p>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="info-card">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.2.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+          <div><b>WhatsApp direto</b><a class="wa-link" href="#">(34) 99698-2471</a></div>
+        </div>
+        <div class="info-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><b>Showroom</b><p>Avenida João Naves de Ávila, 3330 — Saraiva<br>Uberlândia — Minas Gerais</p></div>
+        </div>
+        <div class="info-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><b>Horário de atendimento</b><p>Segunda a sexta: 08h–11h30 e 13h30–18h<br>Sábado: 08h–12h</p></div>
+        </div>
+      </div>
+
+      <div class="form-box reveal">
+        <div class="row-2">
+          <div class="field"><label for="fNome">Nome</label><input type="text" id="fNome" placeholder="Seu nome completo"></div>
+          <div class="field"><label for="fFone">Telefone</label><input type="tel" id="fFone" placeholder="(34) 90000-0000" inputmode="tel"></div>
+        </div>
+        <div class="field"><label for="fEmail">E-mail (opcional)</label><input type="email" id="fEmail" placeholder="voce@email.com"></div>
+        <div class="field"><label for="fModelo">Modelo de interesse</label><select id="fModelo"></select></div>
+        <div class="field"><label for="fAssunto">Assunto</label>
+          <select id="fAssunto">
+            <option>Quero uma proposta / preço</option>
+            <option>Quero agendar um test-drive</option>
+            <option>Quero avaliar meu usado na troca</option>
+            <option>Vendas diretas (PCD / taxi / rural / CNPJ)</option>
+            <option>Consórcio e financiamento</option>
+            <option>Outro assunto</option>
+          </select>
+        </div>
+        <div class="field"><label for="fMsg">Mensagem</label><textarea id="fMsg" placeholder="Conte o que você precisa..."></textarea></div>
+        <label class="check"><input type="checkbox" id="fAceite"> Aceito ser contatado via WhatsApp, telefone ou e-mail e concordo com a política de privacidade.</label>
+        <button class="btn btn-wa btn-block" id="btnForm">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.2.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+          Enviar pelo WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <a href="#top" class="brand" style="margin-bottom:16px">
+          <div class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 12l8 10 8-10z"/></svg></div>
+          <div class="brand-txt"><strong>RENAULT</strong><span>Uberlândia</span></div>
+        </a>
+        <p style="font-size:.86rem;color:var(--muted);max-width:300px">Consultoria de vendas de veículos Renault 0km em Uberlândia e região. Atendimento personalizado do primeiro contato à entrega das chaves.</p>
+        <div class="socials" style="margin-top:20px">
+          <a class="wa-link" href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.2.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3a4 4 0 0 0-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2a1 1 0 0 1 1-1z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="foot-col">
+        <h4>Passeio</h4>
+        <ul>
+          <li><a class="wa-link" data-msg="Olá! Quero informações do Renault Kwid." href="#">Kwid</a></li>
+          <li><a class="wa-link" data-msg="Olá! Quero informações do Renault Kardian." href="#">Kardian</a></li>
+          <li><a class="wa-link" data-msg="Olá! Quero informações do Renault Duster." href="#">Duster</a></li>
+          <li><a class="wa-link" data-msg="Olá! Quero informações do Renault Oroch." href="#">Oroch</a></li>
+          <li><a class="wa-link" data-msg="Olá! Quero informações do Renault Boreal." href="#">Boreal</a></li>
+          <li><a class="wa-link" data-msg="Olá! Quero informações do Renault Koleos." href="#">Koleos</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Elétricos e utilitários</h4>
+        <ul>
+          <li><a class="wa-link" data-msg="Olá! Quero informações do Megane E-Tech." href="#">Megane E-Tech</a></li>
+          <li><a class="wa-link" data-msg="Olá! Quero informações do Kangoo E-Tech." href="#">Kangoo E-Tech</a></li>
+          <li><a class="wa-link" data-msg="Olá! Quero informações do Kangoo." href="#">Kangoo</a></li>
+          <li><a class="wa-link" data-msg="Olá! Quero informações da linha Master." href="#">Linha Master</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Atendimento</h4>
+        <ul>
+          <li><a href="#simulador">Simulador de parcela</a></li>
+          <li><a class="wa-link" data-msg="Olá! Quero agendar um test-drive." href="#">Test-drive</a></li>
+          <li><a class="wa-link" data-msg="Olá! Quero avaliar meu usado." href="#">Avalie seu usado</a></li>
+          <li><a class="wa-link" data-msg="Olá! Quero saber sobre vendas diretas." href="#">Vendas diretas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© <span id="ano"></span> · Consultor de vendas Renault — Uberlândia/MG. Imagens meramente ilustrativas.</span>
+      <span>Desacelere. Seu bem maior é a vida.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab wa-link" href="#" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.2.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script>
+/* =========================================================
+   1) CONFIGURAÇÃO — mude só aqui
+   ========================================================= */
+const WHATS = '5534996982471';                 // seu número (55 + DDD + número)
+const MSG_PADRAO = 'Olá! 😊 Vim pelo site e gostaria de mais informações sobre um Renault 0km.';
+
+/* IMAGENS DOS MODELOS — cole aqui a URL da foto de cada carro.
+   Deixe '' para usar o placeholder elegante automático. */
+const IMAGENS = {
+  'Kwid':'', 'Kardian':'', 'Megane E-Tech':'', 'Duster':'', 'Oroch':'',
+  'Boreal':'', 'Koleos':'', 'Kangoo':'', 'Kangoo E-Tech':'',
+  'Master Chassi':'', 'Master PRO':'', 'Master Furgão':'',
+  'Master Vitré':'', 'Master Minibus':''
+};
+
+/* =========================================================
+   2) CATÁLOGO DE MODELOS
+   ========================================================= */
+const MODELOS = [
+  {nome:'Kwid', motor:'Flex', cat:['passeio'], desc:'O hatch mais econômico da linha, com jeitão de SUV e o menor custo de manutenção da categoria.', specs:['1.0 SCe','Até 5 lugares','Câmbio manual/CVT']},
+  {nome:'Kardian', motor:'Flex', cat:['passeio'], desc:'SUV compacto turbo com câmbio EDC de dupla embreagem e multimídia com Google integrado.', specs:['1.0 TCe Turbo','Câmbio EDC','410L de porta-malas']},
+  {nome:'Megane E-Tech', motor:'100% elétrico', cat:['passeio','eletricos'], desc:'SUV elétrico premium, silencioso, com recarga rápida e tecnologia de bordo de última geração.', specs:['100% elétrico','Recarga rápida DC','Zero emissão']},
+  {nome:'Duster', motor:'Flex', cat:['passeio'], desc:'O SUV que encara qualquer estrada: robustez, espaço interno generoso e versão 4x4 disponível.', specs:['1.6 / 1.3 Turbo','4x2 e 4x4','Alta capacidade de carga']},
+  {nome:'Oroch', motor:'Flex', cat:['passeio'], desc:'A picape de cabine dupla que anda como SUV: conforto de carro e caçamba de verdade.', specs:['Cabine dupla','1.3 Turbo','Caçamba versátil']},
+  {nome:'Boreal', motor:'Flex', cat:['passeio'], desc:'SUV médio da nova geração Renault, com design imponente e pacote completo de assistências.', specs:['Turbo','SUV médio','ADAS de série']},
+  {nome:'Koleos', motor:'Híbrido', cat:['passeio'], desc:'O topo de linha: SUV híbrido com acabamento premium, conforto de viagem e alta eficiência.', specs:['Híbrido','Acabamento premium','7 lugares (versão)']},
+  {nome:'Kangoo', motor:'Flex', cat:['utilitarios'], desc:'Furgão urbano compacto, ágil no trânsito e com excelente relação volume de carga por metro quadrado.', specs:['Furgão compacto','Porta lateral','Baixo consumo']},
+  {nome:'Kangoo E-Tech', motor:'100% elétrico', cat:['utilitarios','eletricos'], desc:'Utilitário elétrico ideal para entregas urbanas: custo por km imbatível e zero emissão.', specs:['100% elétrico','Entrega urbana','Manutenção reduzida']},
+  {nome:'Master Chassi', motor:'Diesel', cat:['utilitarios'], desc:'Base robusta para encarroçamento sob medida: baú, sider, plataforma ou implemento especial.', specs:['Chassi-cabine','Diesel','Alta capacidade']},
+  {nome:'Master PRO', motor:'Diesel', cat:['utilitarios'], desc:'A versão preparada para o trabalho pesado do dia a dia, com foco em produtividade e durabilidade.', specs:['Diesel','Uso intensivo','Baixo custo/km']},
+  {nome:'Master Furgão', motor:'Diesel', cat:['utilitarios'], desc:'Grande volume de carga fechado, ideal para logística, e-commerce e distribuição urbana.', specs:['Furgão fechado','Grande volume','Porta traseira 270°']},
+  {nome:'Master Vitré', motor:'Diesel', cat:['utilitarios'], desc:'Furgão envidraçado com maior visibilidade, muito usado por transformadores e frotistas.', specs:['Envidraçado','Diesel','Versátil']},
+  {nome:'Master Minibus', motor:'Diesel', cat:['utilitarios'], desc:'Transporte de passageiros com conforto e segurança — escolar, fretamento e turismo.', specs:['Transporte de passageiros','Diesel','Conforto de bordo']}
+];
+
+/* =========================================================
+   3) HELPERS
+   ========================================================= */
+const waURL = (msg) => 'https://wa.me/' + WHATS + '?text=' + encodeURIComponent(msg || MSG_PADRAO);
+
+function placeholder(nome, motor){
+  const cor = motor.includes('elétrico') ? '%2300E0C6' : motor==='Híbrido' ? '%238FB4FF' : motor==='Diesel' ? '%23FFC46B' : '%233D7BFF';
+  const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'>
+  <defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
+  <stop offset='0' stop-color='%231A212C'/><stop offset='1' stop-color='%230F131A'/></linearGradient></defs>
+  <rect width='400' height='250' fill='url(%23g)'/>
+  <ellipse cx='200' cy='196' rx='140' ry='16' fill='${cor}' opacity='.16'/>
+  <path d='M78 168h244c8 0 14-6 14-14v-16c0-9-6-16-15-18l-40-7-30-27c-6-6-14-9-22-9h-64c-9 0-17 4-23 11l-24 27-33 7c-9 2-15 9-15 18v14c0 8 6 14 14 14z' fill='none' stroke='${cor}' stroke-width='3' opacity='.85'/>
+  <path d='M136 92h54v33h-84z' fill='none' stroke='${cor}' stroke-width='2.4' opacity='.6'/>
+  <path d='M204 92h48c6 0 11 2 15 6l22 27h-85z' fill='none' stroke='${cor}' stroke-width='2.4' opacity='.6'/>
+  <circle cx='128' cy='170' r='25' fill='%230A0C10' stroke='${cor}' stroke-width='3'/>
+  <circle cx='276' cy='170' r='25' fill='%230A0C10' stroke='${cor}' stroke-width='3'/>
+  <text x='200' y='232' font-family='Arial,sans-serif' font-size='15' font-weight='600' fill='${cor}' text-anchor='middle' opacity='.85'>${nome}</text>
+  </svg>`;
+  return "data:image/svg+xml;charset=utf-8," + svg.replace(/\n/g,'').replace(/#/g,'%23').replace(/%2523/g,'%23');
+}
+
+function srcDe(m){
+  return IMAGENS[m.nome] && IMAGENS[m.nome].trim() ? IMAGENS[m.nome] : placeholder(m.nome, m.motor);
+}
+
+/* =========================================================
+   4) RENDER DOS CARDS
+   ========================================================= */
+const grid = document.getElementById('carGrid');
+
+function tagClass(motor){
+  if(motor.includes('elétrico')) return 'eletrico';
+  if(motor==='Híbrido') return 'hibrido';
+  if(motor==='Diesel') return 'diesel';
+  return '';
+}
+
+function render(filtro){
+  grid.innerHTML = '';
+  MODELOS.filter(m => filtro==='all' || m.cat.includes(filtro)).forEach((m,i)=>{
+    const el = document.createElement('article');
+    el.className = 'car';
+    el.style.animationDelay = (i*0.05)+'s';
+    el.innerHTML = `
+      <div class="car-img">
+        <span class="tag ${tagClass(m.motor)}">${m.motor}</span>
+        <img src="${srcDe(m)}" alt="Renault ${m.nome}" loading="lazy">
+      </div>
+      <div class="car-body">
+        <h3>${m.nome}</h3>
+        <p>${m.desc}</p>
+        <div class="car-specs">${m.specs.map(s=>`<span class="spec">${s}</span>`).join('')}</div>
+        <div class="car-foot">
+          <div class="price-line">Condição especial<b>Consulte no WhatsApp</b></div>
+          <a class="btn btn-primary btn-block" target="_blank" rel="noopener"
+             href="${waURL('Olá! 😊 Vim pelo site e quero uma proposta do Renault ' + m.nome + ' 0km.')}">
+             Quero uma proposta
+          </a>
+        </div>
+      </div>`;
+    grid.appendChild(el);
+  });
+}
+render('all');
+
+document.querySelectorAll('.chip').forEach(c=>{
+  c.addEventListener('click',()=>{
+    document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));
+    c.classList.add('active');
+    render(c.dataset.filter);
+  });
+});
+document.querySelectorAll('[data-jump]').forEach(b=>{
+  b.addEventListener('click',()=>{
+    const alvo = document.querySelector(`.chip[data-filter="${b.dataset.jump}"]`);
+    if(alvo) alvo.click();
+  });
+});
+
+/* imagem do card destaque do hero */
+document.querySelectorAll('img[data-model]').forEach(img=>{
+  const m = MODELOS.find(x=>x.nome===img.dataset.model);
+  if(m) img.src = srcDe(m);
+});
+
+/* =========================================================
+   5) LINKS DE WHATSAPP (globais)
+   ========================================================= */
+document.querySelectorAll('.wa-link').forEach(a=>{
+  a.href = waURL(a.dataset.msg);
+  a.target = '_blank';
+  a.rel = 'noopener';
+  a.addEventListener('click',()=>{ if(window.fbq) fbq('track','Contact'); });
+});
+
+/* =========================================================
+   6) MENU MOBILE + HEADER
+   ========================================================= */
+const burger = document.getElementById('burger');
+const drawer = document.getElementById('drawer');
+burger.addEventListener('click',()=>{
+  burger.classList.toggle('open');
+  drawer.classList.toggle('open');
+  document.body.style.overflow = drawer.classList.contains('open') ? 'hidden' : '';
+});
+drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  burger.classList.remove('open'); drawer.classList.remove('open'); document.body.style.overflow='';
+}));
+const header = document.getElementById('header');
+addEventListener('scroll',()=>header.classList.toggle('scrolled', scrollY>20));
+
+/* =========================================================
+   7) SIMULADOR
+   ========================================================= */
+const selects = [document.getElementById('simModelo'), document.getElementById('fModelo')];
+selects.forEach((sel,idx)=>{
+  sel.innerHTML = (idx===1 ? '<option>Ainda não decidi</option>' : '') +
+    MODELOS.map(m=>`<option>${m.nome}</option>`).join('');
+});
+
+const $ = id => document.getElementById(id);
+const brl = v => v.toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0});
+
+function calcular(){
+  const valor = +$('simValor').value || 0;
+  const entrada = Math.min(+$('simEntrada').value || 0, valor);
+  const n = +$('simPrazo').value;
+  const i = (+$('simTaxa').value || 0)/100;
+  const pv = Math.max(valor - entrada, 0);
+  let pmt = 0;
+  if(pv > 0) pmt = i > 0 ? pv * (i * Math.pow(1+i,n)) / (Math.pow(1+i,n)-1) : pv/n;
+
+  $('outParcela').textContent = pv > 0 ? brl(pmt) : 'R$ 0';
+  $('outResumo').textContent = `${n}x · financiado ${brl(pv)} · entrada ${brl(entrada)} · total aprox. ${brl(pmt*n + entrada)}`;
+
+  const modelo = $('simModelo').value;
+  $('simWa').href = waURL(
+    `Olá! 😊 Fiz uma simulação no site:\n\n` +
+    `🚗 Modelo: ${modelo}\n` +
+    `💰 Valor: ${brl(valor)}\n` +
+    `💵 Entrada: ${brl(entrada)}\n` +
+    `📆 Prazo: ${n}x\n` +
+    `📊 Parcela estimada: ${brl(pmt)}\n\n` +
+    `Consegue me passar a condição real?`
+  );
+}
+['simValor','simEntrada','simPrazo','simTaxa','simModelo'].forEach(id=>{
+  $(id).addEventListener('input', calcular);
+  $(id).addEventListener('change', calcular);
+});
+$('simWa').target='_blank'; $('simWa').rel='noopener';
+$('simWa').addEventListener('click',()=>{ if(window.fbq) fbq('track','Lead',{content_name:'simulador'}); });
+calcular();
+
+/* =========================================================
+   8) FORMULÁRIO -> WHATSAPP
+   ========================================================= */
+$('btnForm').addEventListener('click',()=>{
+  const nome = $('fNome').value.trim();
+  const fone = $('fFone').value.trim();
+  if(!nome){ $('fNome').focus(); $('fNome').style.borderColor = '#FF6B6B'; return; }
+  if(!$('fAceite').checked){ $('fAceite').focus(); alert('Marque o aceite para continuar.'); return; }
+
+  const texto =
+    `Olá! 😊 Vim pelo site.\n\n` +
+    `👤 Nome: ${nome}\n` +
+    (fone ? `📱 Telefone: ${fone}\n` : '') +
+    ($('fEmail').value.trim() ? `✉️ E-mail: ${$('fEmail').value.trim()}\n` : '') +
+    `🚗 Modelo: ${$('fModelo').value}\n` +
+    `📌 Assunto: ${$('fAssunto').value}\n` +
+    ($('fMsg').value.trim() ? `\n💬 ${$('fMsg').value.trim()}` : '');
+
+  if(window.fbq) fbq('track','Lead',{content_name:'formulario_contato'});
+  window.open(waURL(texto),'_blank','noopener');
+});
+$('fNome').addEventListener('input',e=>e.target.style.borderColor='');
+
+/* =========================================================
+   9) ANIMAÇÃO DE ENTRADA + ANO
+   ========================================================= */
+const io = new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.getElementById('ano').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
