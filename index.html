@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Maycon Andrade | Executivo de Vendas Renault Uberlândia</title>
-<meta name="description" content="Catálogo digital Renault 0km em Uberlândia com Maycon Andrade, Executivo de Vendas. Kwid, Kardian, Duster, Oroch, Boreal, Koleos, Megane E-Tech e Master. Proposta, test-drive e avaliação do usado direto no WhatsApp.">
+<meta name="description" content="Catálogo digital Renault 0km em Uberlândia com Maycon Andrade, Executivo de Vendas. Kwid, Kardian, Duster, Oroch, Boreal, Koleos e Megane E-Tech. Proposta, test-drive e avaliação do usado direto no WhatsApp.">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Maycon Andrade | Executivo de Vendas Renault Uberlândia">
@@ -281,7 +281,7 @@ footer{background:var(--black);color:#fff;padding:56px 0 28px}
   </div>
   <div class="hero-specs">
     <div class="wrap">
-      <div class="hspec"><b>8</b><span>Modelos 0km</span></div>
+      <div class="hspec"><b>7</b><span>Modelos 0km</span></div>
       <div class="hspec"><b>100%</b><span>Atendimento direto</span></div>
       <div class="hspec"><b>24h</b><span>Retorno</span></div>
       <div class="hspec"><b>0</b><span>Robô no meio</span></div>
@@ -310,7 +310,6 @@ footer{background:var(--black);color:#fff;padding:56px 0 28px}
         <button class="chip active" data-filter="all">Todos</button>
         <button class="chip" data-filter="passeio">Passeio</button>
         <button class="chip" data-filter="eletricos">Elétricos</button>
-        <button class="chip" data-filter="utilitarios">Utilitários</button>
       </div>
     </div>
     <div class="cat-grid" id="catGrid"></div>
@@ -345,7 +344,7 @@ footer{background:var(--black);color:#fff;padding:56px 0 28px}
       <div class="svc">
         <div class="num">01</div>
         <h3>Vendas diretas</h3>
-        <p>PCD, taxista e motorista de app, produtor rural, CNPJ, governo e linha Master. Isenções e descontos de fábrica com toda a documentação conduzida por mim.</p>
+        <p>PCD, taxista e motorista de app, produtor rural, CNPJ e governo. Isenções e descontos de fábrica com toda a documentação conduzida por mim.</p>
         <a class="wa-link" data-msg="Olá! Quero saber sobre vendas diretas (PCD / taxi / rural / CNPJ)." href="#">Verificar se me enquadro <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></a>
       </div>
       <div class="svc">
@@ -448,10 +447,9 @@ footer{background:var(--black);color:#fff;padding:56px 0 28px}
         </ul>
       </div>
       <div class="foot-col">
-        <h4>Elétricos / Utilitários</h4>
+        <h4>Elétricos</h4>
         <ul>
           <li><a class="wa-link" data-msg="Olá! Quero informações do Megane E-Tech." href="#">Megane E-Tech</a></li>
-          <li><a class="wa-link" data-msg="Olá! Quero informações da linha Master." href="#">Linha Master</a></li>
         </ul>
       </div>
       <div class="foot-col">
@@ -484,12 +482,11 @@ const IMAGENS = {
   'Duster':'Duster.png',
   'Oroch':'Oroch.png',
   'Boreal':'boreal.jpg',
-  'Koleos':'koleos.png',
-  'Master':'Mestre.jpg'
+  'Koleos':'koleos.png'
 };
 const IMG_ETECH = 'https://cdn.group.renault.com/ren/br/new-home-page/promo-card/02-promo-card-megane-etech1.jpg.ximg.xsmall.jpg/09118049e8.jpg';
 
-/* ===== CATÁLOGO (sem Kangoo e Kangoo E-Tech) ===== */
+/* ===== CATÁLOGO (sem Master, Kangoo e Kangoo E-Tech) ===== */
 const MODELOS = [
   {nome:'Kwid', motor:'Flex', cat:['passeio'], desc:'O hatch mais econômico da linha, com jeitão de SUV e o menor custo de manutenção da categoria.', specs:[['1.0','Motor SCe'],['5','Lugares'],['CVT','Câmbio']]},
   {nome:'Kardian', motor:'Flex', cat:['passeio'], desc:'SUV compacto turbo com câmbio EDC de dupla embreagem e multimídia com Google integrado.', specs:[['1.0T','TCe Turbo'],['EDC','Câmbio'],['410L','Porta-malas']]},
@@ -497,8 +494,7 @@ const MODELOS = [
   {nome:'Duster', motor:'Flex', cat:['passeio'], desc:'O SUV que encara qualquer estrada: robustez, espaço interno generoso e versão 4x4 disponível.', specs:[['1.3T','Turbo'],['4x4','Tração'],['SUV','Aventura']]},
   {nome:'Oroch', motor:'Flex', cat:['passeio'], desc:'A picape de cabine dupla que anda como SUV: conforto de carro e caçamba de verdade.', specs:[['1.3T','Turbo'],['CD','Cabine'],['650kg','Carga']]},
   {nome:'Boreal', motor:'Flex', cat:['passeio'], desc:'SUV médio da nova geração Renault, eleito Carro do Ano 2026, com pacote completo de assistências.', specs:[['Turbo','Motor'],['ADAS','De série'],['SUV','Médio']]},
-  {nome:'Koleos', motor:'Híbrido', cat:['passeio'], desc:'O topo de linha: SUV híbrido com acabamento premium, conforto de viagem e alta eficiência.', specs:[['Híbrido','Motor'],['Premium','Acab.'],['7','Lugares']]},
-  {nome:'Master', motor:'Diesel', cat:['utilitarios'], desc:'A linha de utilitários pesados da Renault: furgão, chassi, vitré e minibus para o seu negócio.', specs:[['Diesel','Motor'],['Furgão','+ versões'],['Alta','Carga']]}
+  {nome:'Koleos', motor:'Híbrido', cat:['passeio'], desc:'O topo de linha: SUV híbrido com acabamento premium, conforto de viagem e alta eficiência.', specs:[['Híbrido','Motor'],['Premium','Acab.'],['7','Lugares']]}
 ];
 
 /* ===== HELPERS ===== */
